@@ -1,0 +1,28 @@
+---
+# Lancement d'un conteneur Postgres
+- name : "Launch PostGres database container"
+  docker_container:
+    name: "{{ pg_container }}"
+    image: "{{ pg_image }}"
+    ports:
+      - "{{ pg_port }}:5432"
+    env:
+      POSTGRES_DB: "{{ pg_databse }}"
+      POSTGRES_USER: "{{ pg_user }}"
+      POSTGRES_PASSWORD: "{{ pg_password }}"
+    volumes:
+      - "{{ pg_data }}:/var/lib/postgresql/data"
+
+# Lancement d'un conteneur Odoo
+- name : "launch odoo container"
+  docker_container:
+    name: "{{ odoo_container }}"
+    image: "{{ odoo_image }}"
+    ports:
+      - "{{ odoo_port }}:8069"
+    env:
+      HOST: pg_host
+      USER: "{{ pg_user }}"
+      PASSWORD: "{{ pg_password }}"
+    links:
+      - "{{ pg_container }}: pg_host"

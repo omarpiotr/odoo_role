@@ -1,0 +1,15 @@
+---
+# defaults file for odoo_role
+pg_container: "db"
+pg_image: "postgres:13"
+pg_port: "5432"
+pg_databse: "postgres"
+pg_user: "odoo"
+pg_password: "odoo"
+pg_data: "pg_data"
+
+odoo_container: "odoo"
+odoo_image: "odoo:13"
+odoo_port: "8069"
+
+
