@@ -1,12 +1,12 @@
 Odoo Role
 =========
 
-Installation of Odoo and Postgres:13 on ubuntu server
+Installation of Odoo and Postgres:13 on ubuntu server using ansible docker_container
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+install docker_role before
 
 Role Variables
 --------------
