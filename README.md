@@ -11,17 +11,17 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-*pg_container:
-*pg_image: 
-*pg_port: 
-*pg_databse: 
-*pg_user: 
-*pg_password: 
-*pg_data: 
+* pg_container:
+* pg_image: 
+* pg_port: 
+* pg_databse: 
+* pg_user: 
+* pg_password: 
+* pg_data: 
 
-*odoo_container: 
-*odoo_image: 
-*odoo_port: 
+* odoo_container: 
+* odoo_image: 
+* odoo_port: 
 
 Dependencies
 ------------
